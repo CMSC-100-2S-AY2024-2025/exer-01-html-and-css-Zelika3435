@@ -1,10 +1,112 @@
-.small-square{
-    display: block;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #14171F;
+  }
 
-    height: 300px;
-    width: 300px;
-    background-color: black;
+header {
+    flex-grow: 1;
+    background-image: linear-gradient(to right, rgba(20,23,31, 0.5), rgba(20,23,31, 0)), url('featured.jpg');
+    background-color: #14171F;
+    background-size: cover;
+    background-position: center;
     color: white;
-    border: 1px;
-    margin: 10px;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 10%;
+    height:500px;
+  }
+.logo {
+    cursor: pointer;
+    max-width: 250px;
+}
+.search {
+    cursor: pointer;
+    max-width: 200px;
+    box-shadow: #333;
+}
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #14171F;
+    box-shadow: 0 0 10px rgba(20,23,31, 0.1);
+    color:#55687F;
+    font-weight: 500;
+}
+
+.works-details h2 {
+    color: white;
+}
+  
+.works {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 3px solid #2C343F;
+    border-radius: 5px;
+}
+  
+.works img {
+    max-width: 200px;
+    margin-right: 10px;
+}
+  
+.works-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 3px;
+}
+.banner {
+    background: rgba(20,23,31, 0) linear-gradient(to bottom, rgba(20,23,31, 0) 10%, rgba(20,23,31, 0.1) 40%, rgba(20,23,31, 0.5) 75%, rgb(20,23,31) 100%) repeat scroll 0 0;
+    position: relative;
+    margin-top: -200px;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.banner h1, .banner p {
+    margin-left: 50px;
+
+}
+.banner h1 {
+    font-family: "Georgia" , sans-serif;
+    font-size: 6em;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #14181c;
+    color: white;
+    bottom: 0;
+    width: 100%;
 }
