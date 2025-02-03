@@ -6,11 +6,12 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #14171F;
+    flex-flow: row wrap;
   }
 
 header {
     flex-grow: 1;
-    background-image: linear-gradient(to right, rgba(20,23,31, 0.5), rgba(20,23,31, 0)), url('featured.jpg');
+    background-image: linear-gradient(to right, rgba(20,23,31, 0.5), rgba(20,23,31, 0)), url('images/featured.jpg');
     background-color: #14171F;
     background-size: cover;
     background-position: center;
@@ -50,7 +51,7 @@ li, a {
     color: #edf0f1;
     text-decoration: none;
 }
-section {
+.prev-works, .biography, .skills {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -60,10 +61,15 @@ section {
     font-weight: 500;
 }
 
-.works-details h2 {
-    color: white;
+.works-details h2 , .bio-details h2, .skill-details h2 ,.container h1, .prev-works h1{
+    color: #edf0f1;
+}
+
+.container h1, .prev-works h1{
+    padding: 5px;
 }
   
+
 .works {
     display: flex;
     margin-bottom: 20px;
@@ -77,7 +83,7 @@ section {
     margin-right: 10px;
 }
   
-.works-details {
+.works-details, .skill-details {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -109,4 +115,16 @@ footer {
     color: white;
     bottom: 0;
     width: 100%;
+}
+
+.main-page {
+    display:grid;
+    grid-template-areas: 'container prev-works';
+}
+
+.bio-details {
+    flex-direction: column;
+    padding: 3px;
+    justify-content: space-around;
+    align-items: flex-end;
 }
