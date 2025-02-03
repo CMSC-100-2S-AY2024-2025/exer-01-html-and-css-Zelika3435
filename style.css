@@ -1,0 +1,10 @@
+.small-square{
+    display: block;
+
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border: 1px;
+    margin: 10px;
+}
