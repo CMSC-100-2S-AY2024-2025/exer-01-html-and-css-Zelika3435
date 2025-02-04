@@ -45,7 +45,7 @@ nav li a:hover {
     font-weight: bold;
 }
 
-li, a {
+nav li, a {
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -138,4 +138,9 @@ footer {
 .main-page {
     display:grid;
     grid-template-areas: 'container prev-works';
+}
+
+.skill-details  {
+    padding: 15px;
+    justify-content: space-around;
 }
